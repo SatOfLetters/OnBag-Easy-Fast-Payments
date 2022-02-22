@@ -129,7 +129,7 @@ html,
     visibility: visible;
   } header nav a {
     padding: 0.8rem 0;
-    background-color: rgb(242 41 135 / 90%);
+    background-color: rgb(14 12 24 / 90%);
     border-radius: 0.3rem;
     box-shadow: 0 0.3rem 0.6rem -0.6rem var(--c1a);
     color: var(--light);
@@ -137,7 +137,6 @@ html,
     text-align: left;
     padding-left: 7vw;
     font-weight: 400;
-    border: 1px solid #9f1555;
   } .hambt {
     width: clamp(2.5rem, 11vw, 3rem);
     height: clamp(2.5rem, 12vw, 3rem);
@@ -149,7 +148,7 @@ html,
     box-sizing: border-box;
     padding: 0.5rem 0.3rem;
   } .hambt div {
-    background-color: var(--c1);
+    background-color: var(--light);
     transition: background-color 0.3s ease;
     height: clamp(0.25rem, 1.5vw, 0.33rem);
     border-radius: 1rem;
@@ -186,8 +185,8 @@ html,
     opacity: 0.6;
     font-weight: 200;
     letter-spacing: 0.5px;
-    width: 90%;
-    margin: clamp(1rem, 4vw, 1.2rem) 0;
+    width: 95%;
+    margin: clamp(0.4rem, 1vw, 1rem) 0 clamp(1rem, 4vw, 1.5rem) 0;
   }
 
   .intro_sec {
@@ -209,7 +208,7 @@ html,
     top: 10%;
     right: 0%;
     transform:translateY(1rem);
-    animation:float1 12s ease infinite;
+    animation:float1 24s ease infinite;
   } .ring_asset {
     top: 64%;
     width: 72%;
@@ -236,9 +235,20 @@ html,
     filter: hue-rotate(7deg) blur(1px);
     transform:translateY(1rem);
     animation:float1 7s ease infinite;
+  } .ellipsis5_asset {
+    left: -160%;
+    z-index: -1;
+    top: -30%;
+    width: 100%;
+    opacity: 0.3;
+    filter: blur(2px);
+    animation:float1 8s ease infinite;
   } .smartphones_asset {
-    width: 85%;
-    right: 12%;
+    width: 83%;
+    right: 20%;
+    animation: float1 10s 1s ease infinite;
+    transform: translateY(1rem);
+    top: 2%;
   }
 
   @keyframes float1 {
@@ -261,9 +271,9 @@ html,
     0% {
       transform:rotate(0deg) translateY(0rem);
     } 25% {
-      transform:rotate(4deg) translateY(0.4rem);
+      transform:rotate(3deg) translateY(-0.1rem);
     } 75% {
-      transform:rotate(-4deg) translateY(-0.2rem);
+      transform:rotate(-3deg) translateY(-0.2rem);
     } 100% {
       transform:rotate(0deg) translateY(0rem);
     }
@@ -286,20 +296,18 @@ html,
     gap: clamp(1rem, 5vw, 1.4rem);
     margin-bottom: 2rem;
     align-items: center;
-
   } .intro_cta_ctnr a {
-    font-size: clamp(0.7rem, 3.5vw, 1.05rem);
+    font-size: clamp(0.8rem, 5vw, 1.1rem);
+    text-align: center;
   } .intro_cta_ctnr a:first-child {
     background: var(--c1);
-    padding: clamp(0.6rem, 4vw, 1.2rem) clamp(1.1rem, 6vw, 2.3rem);
+    padding: clamp(0.6rem, 4vw, 1.2rem) clamp(1.1rem, calc(10vw - 1rem), 2.3rem);
     border-radius: 10rem;
     transition: background-color 0.3s ease;
   }.intro_cta_ctnr a:first-child:hover {
     transition: background-color 0.05s ease;
     background: #ff439b;
   }
-
-
 
 
 
@@ -386,21 +394,19 @@ html,
     width: clamp(25rem, calc(50vw - 8rem), 38rem);
     height: clamp(25rem, calc(50vw - 8rem), 38rem);
     margin: 0;
-    top: -2.5rem;
-    right: 4vw;
+    top: calc(2.3rem - 7vw);
+    right: 2vw;
   }
 
   
 
   h1 {
     font-size: clamp(3.6rem, 5vw, 4.5rem);
-    line-height: clamp(4.2rem, 6.2vw, 5.1rem);
+    line-height: clamp(4.2rem, 5.9vw, 5.1rem);
     max-width: clamp(29rem, 40vw, 35rem);
   } h2 {
     max-width: clamp(29rem, 40vw, 35rem);
   }
-
-
 }
 
 
