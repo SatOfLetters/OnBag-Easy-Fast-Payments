@@ -1,1 +1,1 @@
-# OnBag-Easy---Fast-Payments
+# OnBag-Easy-Fast-Payments
