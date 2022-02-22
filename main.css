@@ -26,12 +26,16 @@ html,
   }
   body {
     background-color: var(--c3);
-    color:var(--light);
+    color: var(--light);
     overflow-x: hidden;
     overflow-y: scroll;
-    background-image: radial-gradient(ellipse at -30% 2%, rgba(132, 82, 128, 0.55) 0%, rgba(255, 255, 255, 0) 48.63%), radial-gradient(ellipse at 110% 130%, #FF0055 0%, rgba(255, 255, 255, 0) 42.64%), radial-gradient(circle at 100% 90%, rgba(246, 120, 147, 0.5) 0%, rgba(255, 255, 255, 0) 37%), conic-gradient(from 270.02deg at -14% 105%, #2f1f6a 0%, rgba(255, 255, 255, 0) 60%), radial-gradient(ellipse at 80% 105%, #f67893 -100%, rgba(255, 255, 255, 0) 60%), radial-gradient(circle at 100% 100%, #dc267e 1.6891891891891893%, #2f1f6a 90%, #5c2258 100%);
-    min-height: 100vh;background-blend-mode: normal, normal, normal, normal, screen, normal;
+    background-image: linear-gradient(240deg, #2F1F6A 30%, #845280 50%, #DC267E 60%);
+    background-image: conic-gradient(from 230deg at 73.47% 55.13%, #F67893 -16.88deg, #DC267E 12.75deg, #2F1F6A 106.88deg, #5C2258 191.25deg, #845280 283.13deg, #F67893 343.12deg, #DC267E 372.75deg);
+    min-height: 100vh;
+    background-blend-mode: normal, normal, normal, normal, screen, normal;
     background-attachment: fixed;
+    background-position: 90% 103rem;
+    background-size: 200% 250%;
   }
   
   body,
@@ -89,11 +93,11 @@ html,
 /* HEADER & HAMBURGUER MENU */
 
   header {
-    /* position: fixed; */
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9;
+    z-index: 10;
     font-weight: 100;
     font-size: clamp(0.8rem, 5vw, 1.1rem);
     margin-bottom: clamp(0.5rem, 2vw, 2rem);
@@ -164,7 +168,7 @@ html,
     font-weight: 400;
     max-width: 20rem;
     margin: 0 auto;
-    z-index: 9;
+    z-index: 8;
     backdrop-filter: blur(1rem);
     border: 1px solid #E68;
     box-shadow: 0 0.1rem var(--light);
@@ -203,13 +207,19 @@ html,
   } .intro_assets img {
     position: absolute;
   }
+
+  .intro_content {
+    position:relative;
+    z-index: 10;
+  }
   
   .ellipsis1_asset {
     width: 95%;
     top: 10%;
     right: 0%;
     transform:translateY(1rem);
-    animation:float1 24s ease infinite;
+    animation:float2 24s ease infinite;
+    transform-origin: bottom right;
   } .ring_asset {
     top: 64%;
     width: 72%;
@@ -261,11 +271,11 @@ html,
     }
   } @keyframes float2 {
     0% {
-      transform:translateY(1rem) scale(1);
+      transform:translateY(-1rem) scale(1);
     } 50% {
-      transform:translateY(0rem) scale(1.1);
+      transform:translateY(0rem) scale(1.06);
     } 100% {
-      transform:translateY(1rem) scale(1);
+      transform:translateY(-1rem) scale(1);
     }
   }  @keyframes floatrotate {
     0% {
@@ -282,7 +292,7 @@ html,
   .highlight1 {
     color: var(--c2);
     font-weight: 600;
-    font-size: clamp(0.6rem, 3.8vw, 1rem);
+    font-size: clamp(0.6rem, 3.6vw, 1rem);
     display: flex;
     gap: clamp(0.1rem, 2vw, 0.3rem);
     align-items: center;
@@ -338,10 +348,13 @@ html,
 
 
 
-@media (min-width:1100px), (min-width:800px) and (max-height:500px) {
+@media (min-width:1100px), (min-width:800px) and (min-height:300px) {
 
   body {
-    background-image: radial-gradient(ellipse at 2% 2%, rgba(132, 82, 128, 0.55) 0%, rgba(255, 255, 255, 0) 48.63%), radial-gradient(ellipse at 99% 100%, #FF0055 0%, rgba(255, 255, 255, 0) 42.64%), radial-gradient(circle at 99% 60%, rgba(246, 120, 147, 0.5) 0%, rgba(255, 255, 255, 0) 37%), conic-gradient(from 270.02deg at 66% 101%, #2f1f6a 0%, rgba(255, 255, 255, 0) 47.79%), radial-gradient(ellipse at 100% 86%, #f67893 0%, rgba(255, 255, 255, 0) 60%), radial-gradient(circle at 100% 100%, #dc267e 1.6891891891891893%, #2f1f6a 100%, #5c2258 100%);
+    background-image: linear-gradient(140deg, #2F1F6A 40%, #845280 70%, #DC267E 90%);
+    background-image: conic-gradient(from 140deg at 73.47% 55.13%, #F67893 -16.88deg, #DC267E 12.75deg, #2F1F6A 106.88deg, #5C2258 191.25deg, #845280 283.13deg, #F67893 343.12deg, #DC267E 372.75deg);
+    background-position: 0;
+    background-size: cover;
   }
 
 

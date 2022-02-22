@@ -11,7 +11,7 @@ console.log('done')
 
 /* LOADING BG + DOCUMENT.READYSTATE */
 
-/* const loadingBg = document.getElementById('loading_bg')
+const loadingBg = document.getElementById('loading_bg')
 
 document.onreadystatechange = function () {
     if (document.readyState == "interactive" || document.readyState == "complete") {
@@ -21,7 +21,7 @@ document.onreadystatechange = function () {
             menuBt.style.transform = 'translateY(0) rotate(0deg)'
         }, 200);
     }
-} */
+}
 
 
 
